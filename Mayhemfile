@@ -1,0 +1,7 @@
+project: word-checker
+target: fuzz_word_checker.jar
+
+cmds:
+    - cmd: ./fuzz_word_checker.jar @@
+      env:
+        MFUZZ_JAVA: '1'
